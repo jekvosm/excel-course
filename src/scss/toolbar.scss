@@ -14,6 +14,6 @@
   display: flex;
 
   .button {
-    @include button(green);
+    @include button(red);
   }
 }
