@@ -4,7 +4,8 @@
   "description": "Pure JavaScript Exel Application",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "cross-env NODE_ENV=development webpack serve  --open",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
+    "@types/jest": "^26.0.24",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
@@ -40,6 +42,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.6",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
     "sass": "^1.34.0",
